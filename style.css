@@ -94,4 +94,21 @@ img{
     background-position: center;
     border: 3px solid #1ece5b;
     border-radius: 5px;
+
+}
+.facebook:hover{
+    border: 3px solid #f1ef79;
+    box-shadow: 5px 10px 15px #f1ed01;
+}
+.instagram:hover{
+    border: 3px solid #1ece5b;
+    box-shadow: 5px 10px 15px #1ece5b;
+}
+.snapchat:hover{
+    border: 3px solid #3b5998;
+    box-shadow: 5px 10px 15px #3b5998;
+}
+.spotify:hover{
+    border: 3px solid #c32aa3;
+    box-shadow: 5px 10px 15px #c32aa3;
 }
