@@ -68,14 +68,14 @@ img{
 
 
 .facebook{
-    background-image: url('/static/facebook.png');
+    background-image: url('static/facebook.png');
     background-size: 226px;
     background-position: center;
     border: 3px solid #3b5998;
     border-radius: 5px;
 }
 .instagram{
-    background-image: url('/static/instagram.png');
+    background-image: url('static/instagram.png');
     background-size: cover;
     background-position: center;
     border: 3px solid #c32aa3;
@@ -83,13 +83,13 @@ img{
 }
 .snapchat{
     /* background: #fffc00; */
-    background-image: url('/static/snapchat.png');
+    background-image: url('static/snapchat.png');
     background-position: center;
     border: 3px solid #f1ed01;
     border-radius: 5px;
 }
 .spotify{
-    background-image: url('/static/spotify.png');
+    background-image: url('static/spotify.png');
     background-size: 350px;
     background-position: center;
     border: 3px solid #1ece5b;
