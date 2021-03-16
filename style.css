@@ -13,7 +13,6 @@ body{
 
 .content {
     margin: 0 auto;
-
 }
 .header-container {
     margin: 0 auto;
@@ -25,6 +24,8 @@ body{
     border-radius: 8px;
     padding: 2em;
     width: 400px;
+    animation: 1s ease-out 0s 1 slideInFromTop;
+
 }
 .header-container h1{
     margin: 0 auto;
@@ -62,50 +63,54 @@ img{
 
 .facebook{
     background-image: url('static/facebook.png');
-    background-size: 226px;
+    background-size: 230px;
     background-position: center;
-    border: 3px solid #3b5998;
+    border: none;
     border-radius: 5px;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+
 }
 .instagram{
     background-image: url('static/instagram.png');
     background-size: cover;
     background-position: center;
-    border: 3px solid #c32aa3;
+    border: none;
     border-radius: 5px;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+
 }
 .snapchat{
     background-image: url('static/snapchat.png');
     background-position: center;
-    border: 3px solid #f1ed01;
+    border: none;
     border-radius: 5px;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+
 }
 .spotify{
     background-image: url('static/spotify.png');
     background-size: 350px;
     background-position: center;
-    border: 3px solid #1ece5b;
+    border: none;
     border-radius: 5px;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+
 
 }
 
 /* LINKS HOVER */
 
 .facebook:hover{
-    border: 3px solid #f1ef79;
-    box-shadow: 5px 10px 15px #f1ed01;
-}
-.instagram:hover{
-    border: 3px solid #1ece5b;
-    box-shadow: 5px 10px 15px #1ece5b;
-}
-.snapchat:hover{
-    border: 3px solid #3b5998;
     box-shadow: 5px 10px 15px #3b5998;
 }
-.spotify:hover{
-    border: 3px solid #c32aa3;
+.instagram:hover{
     box-shadow: 5px 10px 15px #c32aa3;
+}
+.snapchat:hover{
+    box-shadow: 5px 10px 15px #f1ed01;
+}
+.spotify:hover{
+    box-shadow: 5px 10px 15px #1ece5b;
 }
 
 
@@ -123,3 +128,37 @@ img{
         width: 375px;
     }
 }
+
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0%;
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+@keyframes slideInFromRight {
+    100% {
+      transform: translateX(0);
+    }
+    0% {
+      transform: translateX(100%);
+      opacity: 0%;
+    }
+  }
+
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-50%);
+      opacity: 0%;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 100%;
+
+    }
+  }
+  
