@@ -33,11 +33,17 @@ body{
     margin:auto;
     line-height:51px;
     vertical-align:middle;
+    animation: slideInFromTop 1s ease-out;
+
+
 }
 img{
     height: 180px;
     border: 1px solid black;
     border-radius: 100%;
+}
+.photo {
+    animation: slideInFromTop 1.3s ease-out;
 }
 
 /* LINKS */
@@ -150,6 +156,24 @@ img{
     }
   }
 
+/* @keyframes slidFromBottom {
+    0% {
+
+    }
+    25% {
+
+    }
+    50% {
+
+    }
+    75% {
+
+    }
+    100% {
+
+    }
+} */
+
   @keyframes slideInFromTop {
     0% {
       transform: translateY(-50%);
@@ -161,4 +185,12 @@ img{
 
     }
   }
-  
+
+  @keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes moveLeftToRight {
+    0%   { left: -100px; }
+    100% { left: 100%; }
+  }
